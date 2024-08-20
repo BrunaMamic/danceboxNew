@@ -26,7 +26,7 @@ export const Hero = () => {
     <div className={styles.mainWrapper}>
       <div className={styles.wrapper}>
         <div className={styles.titleSection}>
-          <h1>{t("title1")}</h1>
+          <h2>{t("title1")}</h2>
           <h1
             style={{
               fontSize: "140px",
