@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <About />
       <Events />
-      {/* <Disciplines />
+      {/* <Disciplines /> */}
       <Teachers
         image1="https://cdn.dotyourspot.com/images/revelin-bistro/Home/TwoRowSlideShow/0003.webp"
         image2="https://cdn.dotyourspot.com/images/revelin-bistro/Home/TwoRowSlideShow/0003.webp"
@@ -30,7 +30,7 @@ export default function Home() {
       <ImageGrid />
       <Map />
 
-      <Footer /> */}
+      <Footer />
     </>
   );
 }

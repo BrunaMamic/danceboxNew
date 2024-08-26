@@ -1,12 +1,22 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 
 export const Teachers = ({ image1, image2, reverse }: any) => {
+  const [pageWidth, setPageWidth] = useState<number>(0);
+
+  useEffect(() => {
+    setPageWidth(window.innerWidth);
+  }, []);
+
   return (
     <div className={styles.wrapper}>
       <div
         className={styles.container}
-        style={reverse && { flexDirection: "row-reverse" }}>
+        style={
+          reverse && pageWidth >= 1100 ? { flexDirection: "row-reverse" } : {}
+        }>
         <div className={styles.textSection}>
           <h1>Barbara Mamic</h1>
           <h2>I mainly do editorial shoots, but always with human elements.</h2>

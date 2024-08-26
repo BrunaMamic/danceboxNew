@@ -38,9 +38,33 @@
   flex: 1;
   display: flex;
   gap: 1rem;
+  overflow: hidden;
 }
 
 .image {
   width: 100%;
   height: auto;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    margin: 100px 0 0 0;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  .textSection {
+    max-width: 100%;
+  }
+
+  .image {
+    width: 50%;
+    height: 300px;
+  }
 }
