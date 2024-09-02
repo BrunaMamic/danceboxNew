@@ -1,7 +1,12 @@
 .mainWrapper {
   display: flex;
   gap: 200px;
+  margin: 200px 0 0 0;
   padding: 0 50px 50px 50px;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .logo {
@@ -39,6 +44,8 @@
   gap: 10px;
 
   font-size: 24px;
+
+  cursor: pointer;
 }
 
 .title {
@@ -51,11 +58,31 @@
   font-size: 24px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.329);
+  cursor: pointer;
 }
 @media screen and (max-width: 700px) {
   .mainWrapper {
     margin: 100px 0;
     display: block;
     padding: 0 20px 20px 20px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .doc,
+  .schedule,
+  .email,
+  .schedule,
+  .phone {
+    font-size: 16px;
+
+    cursor: pointer;
   }
 }

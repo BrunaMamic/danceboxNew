@@ -7,69 +7,60 @@ export const Events = () => {
   const t = useTranslations("events");
   const images = [
     {
-      url: "https://cdn.dotyourspot.com/images/revelin-bistro/Home/TwoRowSlideShow/0003.webp",
+      url: "assets/documents/raspored 24.png",
       alt: "Two cups of coffee being made from a coffee machine.",
       title: t("title1"),
       text: t("text1"),
 
-      href: "/",
+      href: "https://docs.google.com/forms/d/e/1FAIpQLScav_ZuSo6uwwaC5spJcMVtacdTWMMV-YpVkixRjoazmCxk8g/viewform?vc=0&c=0&w=1&flr=0&pli=1",
     },
     {
-      url: "https://cdn.dotyourspot.com/images/revelin-bistro/Home/TwoRowSlideShow/009.webp",
+      url: "assets/images/events/1.jpg",
       alt: "Food with decorated plate",
       title: t("title2"),
       text: t("text2"),
 
-      href: "/",
+      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid0pgHkgdXXZhZN65aYwHchpt9Bda9Xd6h9e53FxnqT6LLwDZZdzniRKRDmVFNTsjrTl",
     },
     {
-      url: "https://cdn.dotyourspot.com/images/revelin-bistro/Home/TwoRowSlideShow/001.webp",
+      url: "assets/images/events/2.jpg",
       alt: "Coffe served on a table",
       title: t("title3"),
       text: t("text3"),
 
-      href: "/",
+      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid021VvKfMzJuMjbHD2hs685QADJp33Lb94ZecVuve332bEirEo5Ky5o8qF99MS1t6ehl",
     },
     {
-      url: "https://cdn.dotyourspot.com/images/revelin-bistro/Home/TwoRowSlideShow/0005.webp",
+      url: "assets/images/events/3.jpg",
       alt: "Breakfast",
       title: t("title4"),
       text: t("text4"),
 
-      href: "/",
-    },
-    {
-      url: "https://cdn.dotyourspot.com/images/revelin-bistro/Home/TwoRowSlideShow/0005.webp",
-      alt: "Breakfast",
-      title: t("title5"),
-      text: t("text5"),
-
-      href: "/",
-    },
-    {
-      url: "https://cdn.dotyourspot.com/images/revelin-bistro/Home/TwoRowSlideShow/0005.webp",
-      alt: "Breakfast",
-      title: t("title6"),
-      text: t("text6"),
-
-      href: "/",
+      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid0qq8JPu4hZgnzd8cFNMTMZXdyNJjvWXDr1dPoSKviEKYqbEYKUgVKq5XiP38cmaf8l",
     },
   ];
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="events">
       <div className={styles.wrapper}>
-        {images.map((item, index) => (
-          <Link href={item.href} key={`item_${index}`}>
-            <div className={styles.project}>
-              <img src={item.url} alt="Project" className={styles.image} />
-              <div className={styles.text}>
-                <h2>{item.title}</h2>
-                <p>{item.text}</p>
+        <h1 className={styles.title}>{t("title")}</h1>
+        <div className={styles.grid}>
+          {images.map((item, index) => (
+            <Link
+              href={item.href}
+              key={`item_${index}`}
+              target="_blank"
+              rel="noopener noreferrer">
+              <div className={styles.project}>
+                <img src={item.url} alt="Project" className={styles.image} />
+                <div className={styles.text}>
+                  <h2>{item.title}</h2>
+                  <p>{item.text}</p>
+                </div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

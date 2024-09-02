@@ -5,16 +5,16 @@ import Image from "next/image";
 import { Link } from "@/navigation";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { useTranslations } from "next-intl";
+
+import { useLocale, useTranslations } from "next-intl";
 
 const Navbar = () => {
   const t = useTranslations("navbar");
   const [isOpen, setIsOpen] = useState(0);
-  const params = usePathname();
+  const pathname = usePathname();
+  const locale = useLocale();
 
   const [pageWidth, setPageWidth] = useState<number>(0);
-
-  const pageName = params === "/" ? "home" : params.trim().split("/")[2] || "";
 
   useEffect(() => {
     setPageWidth(window.innerWidth);
@@ -52,8 +52,8 @@ const Navbar = () => {
             <Image
               src={"/db_logo.png"}
               alt={"Logo"}
-              width={150}
-              height={100}></Image>
+              width={100}
+              height={80}></Image>
           </div>
         </Link>
         {pageWidth >= 1100 ? (
@@ -77,6 +77,21 @@ const Navbar = () => {
               <li>
                 <Link href="#location">{t("location")}</Link>
               </li>
+              {/* <div className={styles.languageWrapper}>
+                <Link
+                  href={pathname}
+                  locale={"en"}
+                  className={`${styles.language} ${locale === "en" && styles.activeLanguage}`}>
+                  EN
+                </Link>
+                /
+                <Link
+                  href={pathname}
+                  locale={"hr"}
+                  className={`${styles.language} ${locale === "hr" && styles.activeLanguage}`}>
+                  HR
+                </Link>
+              </div> */}
             </ul>
           </>
         ) : (
@@ -109,41 +124,46 @@ const Navbar = () => {
                 <div
                   className={`${styles.link}  ${handleFadeInAnim()}`}
                   style={{ transition: "0.5s ease 6s" }}>
-                  <Link href="/" onClick={() => setIsOpen(-1)}>
+                  <Link href="#about" onClick={() => setIsOpen(-1)}>
                     <div className={`${styles.linkOuterWrapper} `}>
-                      {t("home")}
+                      {t("about")}
                     </div>
                   </Link>
                 </div>
                 <div
                   className={`${styles.link}  ${handleFadeInAnim()}`}
                   style={{ transition: "0.8s ease 9s" }}>
-                  <Link href="/qa-consulting" onClick={() => setIsOpen(-1)}>
+                  <Link href="#events" onClick={() => setIsOpen(-1)}>
                     <div className={`${styles.linkOuterWrapper}  `}>
-                      {t("consulting")}
+                      {t("events")}
                     </div>
                   </Link>
                 </div>
                 <div className={`${styles.link}  ${handleFadeInAnim()}`}>
-                  <Link
-                    href="/complete-test-coverage"
-                    onClick={() => setIsOpen(-1)}>
+                  <Link href="#program" onClick={() => setIsOpen(-1)}>
                     <div className={`${styles.linkOuterWrapper} `}>
-                      {t("testing")}
+                      {t("program")}
                     </div>
                   </Link>
                 </div>
                 <div className={`${styles.link}  ${handleFadeInAnim()}`}>
-                  <Link href="/systems-platforms" onClick={() => setIsOpen(-1)}>
+                  <Link href="#teachers" onClick={() => setIsOpen(-1)}>
                     <div className={`${styles.linkOuterWrapper}  `}>
-                      {t("systems")}
+                      {t("teachers")}
                     </div>
                   </Link>
                 </div>
                 <div className={`${styles.link}  ${handleFadeInAnim()}`}>
-                  <Link href="/contact-us" onClick={() => setIsOpen(-1)}>
+                  <Link href="#gallery" onClick={() => setIsOpen(-1)}>
                     <div className={`${styles.linkOuterWrapper}  `}>
-                      {t("contact")}
+                      {t("gallery")}
+                    </div>
+                  </Link>
+                </div>
+                <div className={`${styles.link}  ${handleFadeInAnim()}`}>
+                  <Link href="location" onClick={() => setIsOpen(-1)}>
+                    <div className={`${styles.linkOuterWrapper}  `}>
+                      {t("location")}
                     </div>
                   </Link>
                 </div>

@@ -40,7 +40,8 @@
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  z-index: 999;
+  z-index: 100;
+  height: 60px;
 }
 
 .navLinks {
@@ -94,8 +95,9 @@
 
   .hamburgerLine {
     color: #000;
+    background-color: #000;
     width: 30px;
-    height: 3px;
+    height: 2px;
     margin: 6px auto;
     border-radius: 1px;
     transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 0.8);
@@ -121,14 +123,16 @@
   cursor: pointer;
 
   .hamburgerLine {
+    background-color: #000;
+
     width: 30px;
-    height: 3px;
+    height: 2px;
     margin: 4px auto;
     border-radius: 1px;
     transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 0.8);
 
     &:nth-child(1) {
-      transform: rotate(45deg) translateY(11px);
+      transform: rotate(45deg) translateY(9px);
     }
 
     &:nth-child(2) {

@@ -13,9 +13,39 @@
   },
   "about": {
     "title": "O nama",
-    "section1": "Plesni studio DanceBox je neprofitna organizacija čiji je primarni cilj razvijanje glazbeno – plesne djelatnosti na području grada Splita i šire.",
-    "section2": "Studio njeguje jazz balet, modern jazz i suvremeni ples kao temeljne plesne discipline i to sa svim dobnim skupinama. Polaznicima se nudi mogućnost nastupa na raznim glazbeno-scenskim manifestacijama u gradu Splitu i šire, sudjelovanje na godišnjim i polugodišnjim produkcijama Studia kao i mogućnost sudjelovanja na nacionalnim i međunarodnim natjecanjima i festivalima.",
+    "section1": "Plesni studio Dance Box je neprofitna organizacija koja okuplja djecu, mlade i odrasle u svrhu razvoja glazbeno plesnih aktivnosti i djelatnosti. Rad s polaznicima se bazira na profesionalnosti i dosljednosti u njegovanju plesnih tehnika kao osnovnog alata scenskog izražavanja, a što uključuje kondicijsku pripremu plesača, rad na tehnici, razvoj kreativnosti i sudjelovanje u koreografijama kao posebnom benefitu specifičnom za ovu djelatnost.",
+    "section2": "Temeljne discipline studija su jazz balet, modern jazz i suvremeni ples, te svi polaznici prolaze kroz njih unutar svojih treninga. Bazna nota koja podupire navedene discipline je balet s čijim osnovama su svi plesači upoznati. Studio je od svoga osnutka 2012. godine član Hrvatskog plesnog saveza www.hsds.hr/ unutar kojega se kvalificira za međunarodna plesna natjecanja International dance organization https://www.ido-dance.com/ Ujedno sudjeluje na raznim plesnim festivalima u Hrvatskoj i regiji, a jednom godišnje održava vlastiti plesnu produkciju.",
     "section3": "Dvije plesne dvorane raspoređene na 170 kvadratnih metara, te stručni kadar omogućuju intezivan i kvalitetan rad s polaznicima te ih osposobljava za kasnije eventualno profesionalno bavljenje ovom glazbeno-scenskom djelatnošću."
+  },
+  "disciplines": {
+    "mainTitle": "Disciplines",
+    "title1": "Jazz balet",
+    "content1": "Kontrakcije i izolirani pokreti tijela u komparaciji s baletnom tehnikom stvaraju zanimljiv plesni izričaj koji je rado viđen u komercijalnim, natjecateljskim ili kazališnim okvirima.",
+    "title2": "Show dance",
+    "content2": "Plesna disciplina koja podrazumijeva korištenje jazz ili modern tehnike uz obavezno korištenje i razvijanje tematike.",
+    "title3": "Balet",
+    "content3": "Savladavajući ovu tehniku discipliniranim i kontinuiranim radom, plesač stječe izvanrednu koordinaciju i kontrolu tijela koja mu kasnije koristi za potpunu posvećenost izvedbi u kojoj svaki gledatelj može uživati, bilo da se radi o klasičnom ili modernom plesnom izričaju.",
+    "title4": "Modern jazz",
+    "content4": "Plesna tehnika koja se suprotstavlja striktnim baletnim propozicijama te zahtjeva slobodniji pokret.",
+    "title5": "Plesni Vrtic",
+    "content5": "Program sadrži osnovne gimnastičke elemente, temeljne baletne pozicije, te koreografije čija glazba potiče razvoj sluha i ritmičnosti. Cilj rada s djecom ovog uzrasta jeste da zabavom dođu do znanja te na taj način osvijeste svoje tijelo i pripreme ga za kasnije zahtjevnije plesne tehnike."
+  },
+  "events": {
+    "title": "Najnoviji projekti",
+    "title1": "UPISI NOVIH ČLANOVA ZA SEZONU 2024/25",
+    "text1": "Dragi prijatelji, roditelji i ostali koji se želite priključiti našem studiju, popunite prijavnicu i postanite dio našeg plesnog tima.",
+    "title2": "Šibenik dance festival",
+    "text2": "Posljednja proba i imamo Practice keeper. Novu desetominutnu koreografiju naše Barbare u izvedbi 11 naših plesača u dobi od 9 do 19 godina. Čini se nezamislivo, ali njoj je sve moguće",
+    "title3": "Dance Camp Bihać",
+    "text3": "Ova naša mala četa mladih plesača otisnula se u novi izazov zvani 12 plesnih radionica unutar 4 dana u Bihaću u više neznanim nego znanim stilovima...",
+    "title4": "Dalmatian dance festival",
+    "text4": " Ne može bolje za Svjetski dan plesa nego biti pobjednik cjelokupnog natjecanja. @dalmatian.dance.festivals Srce nam je veliko ko kuća 💗 Hvala organizatorima @jureleskur_pk_lambada i @ivana_zanetic_pk_lambada"
+  },
+  "gallery": {
+    "title": "Moments"
+  },
+  "maps": {
+    "title": "Location"
   },
   "footer": {
     "title": "Get in touch",

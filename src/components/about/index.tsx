@@ -1,19 +1,44 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import styles from "./styles.module.scss";
 import { useTranslations } from "next-intl";
 
 export const About = () => {
   const t = useTranslations("about");
 
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    requestAnimationFrame(() => {
+      const scrollTop = window.scrollY;
+      const parallaxImage = document.getElementById(
+        "aboutImage"
+      ) as HTMLElement;
+      if (parallaxImage) {
+        const animRect1 = parallaxImage.getBoundingClientRect();
+        const speed = 6;
+
+        if (animRect1.bottom < window.scrollY && animRect1.bottom / 2 > 0) {
+          parallaxImage.style.transform = `translate3d(0px, ${animRect1.top / speed}px, 0px)`;
+        }
+      }
+    });
+  };
+
   return (
-    <div className={styles.mainWrapper}>
+    <div className={styles.mainWrapper} id="about">
       <div className={styles.wrapper}>
         <h1 className={styles.title}>{t("title")}</h1>
         <div className={styles.contentWrapper}>
           <div className={styles.imageWrapper}>
             <img
-              src="https://cdn.dotyourspot.com/images/revelin-bistro/Home/TwoRowSlideShow/0003.webp"
+              src="assets/images/dvorana.jpg"
               alt="About Us"
+              id="aboutImage"
             />
           </div>
 
@@ -27,3 +52,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default About;

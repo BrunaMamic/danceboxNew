@@ -1,47 +1,71 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./styles.module.scss";
 import { useTranslations } from "next-intl";
+import { useInViewport } from "@/utils";
 
 export const Hero = () => {
   const t = useTranslations("hero");
   const images = [
     {
-      url: "https://cdn.dotyourspot.com/images/revelin-bistro/Home/TwoRowSlideShow/0003.webp",
+      url: "assets/images/002.jpg",
       alt: "Two cups of coffee being made from a coffee machine.",
     },
     {
-      url: "https://cdn.dotyourspot.com/images/revelin-bistro/Home/TwoRowSlideShow/009.webp",
+      url: "assets/images/003.jpg",
       alt: "Food with decorated plate",
     },
     {
-      url: "https://cdn.dotyourspot.com/images/revelin-bistro/Home/TwoRowSlideShow/001.webp",
-      alt: "Coffe served on a table",
+      url: "assets/images/004.jpg",
+      alt: "Coffee served on a table",
     },
     {
-      url: "https://cdn.dotyourspot.com/images/revelin-bistro/Home/TwoRowSlideShow/0005.webp",
+      url: "assets/images/005.jpg",
       alt: "Breakfast",
     },
   ];
+
+  const [imagesLoaded, setImagesLoaded] = useState(
+    new Array(images.length).fill(false)
+  );
+  const ref = useRef<HTMLDivElement>(null);
+  const inView = useInViewport(ref, "-100px");
+
+  useEffect(() => {
+    if (inView) {
+      let index = imagesLoaded.findIndex((loaded) => !loaded);
+      if (index !== -1) {
+        setTimeout(() => {
+          setImagesLoaded((prevLoaded) =>
+            prevLoaded.map((loaded, i) => (i === index ? true : loaded))
+          );
+        }, index * 100);
+      }
+    }
+  }, [inView, imagesLoaded]);
+
   return (
     <div className={styles.mainWrapper}>
       <div className={styles.wrapper}>
         <div className={styles.titleSection}>
-          <h2>{t("title1")}</h2>
           <h1
             style={{
-              fontSize: "140px",
-              fontStyle: "italic",
+              fontSize: "170px",
             }}>
             {t("title2")}
           </h1>
+          <h2>{t("title1")}</h2>
         </div>
-        <div className={styles.imagesSection}>
+        <div className={styles.imagesSection} ref={ref}>
           {images.map((image, index) => (
             <img
               key={index}
               src={image.url}
               alt={image.alt}
-              className={styles.image}
+              className={`${styles.image} ${
+                imagesLoaded[index] && styles.loaded
+              }`}
             />
           ))}
         </div>

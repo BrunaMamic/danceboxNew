@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 
-export const Teachers = ({ image1, image2, reverse }: any) => {
+export const Teachers = ({ image1, image2, reverse, text }: any) => {
   const [pageWidth, setPageWidth] = useState<number>(0);
 
   useEffect(() => {
@@ -11,27 +11,24 @@ export const Teachers = ({ image1, image2, reverse }: any) => {
   }, []);
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="teachers">
       <div
         className={styles.container}
         style={
           reverse && pageWidth >= 1100 ? { flexDirection: "row-reverse" } : {}
         }>
         <div className={styles.textSection}>
-          <h1>Barbara Mamic</h1>
-          <h2>I mainly do editorial shoots, but always with human elements.</h2>
-          <p>
-            I believe that adding a human element to an art concept is the most
-            organic way to represent our touch in the world.
-          </p>
-          <p>
-            I believe that adding a human element to an art concept is the most
-            organic way to represent our touch in the world.
-          </p>
-          <p>
-            I believe that adding a human element to an art concept is the most
-            organic way to represent our touch in the world.
-          </p>
+          {text && text.length > 0 && <h1>{text[0].text}</h1>}
+
+          {text && text.length > 1 && <h2>{text[1].text}</h2>}
+
+          {text &&
+            text.length > 2 &&
+            text
+              .slice(2)
+              .map((item: any, index: number) => (
+                <p key={index}>{item.text}</p>
+              ))}
         </div>
         <div className={styles.imageSection}>
           <img src={image1} alt="Editorial Shoot 1" className={styles.image} />
