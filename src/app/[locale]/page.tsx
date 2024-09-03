@@ -16,7 +16,7 @@ export default function Home() {
       text: "Barbara Mamić",
     },
     {
-      text: "Barbara je odrasla u Splitu gdje je, od osnutka Dance Box-a pa do odlaska u Zagreb na studij, sudjelovala u radu studija kao plesač, a sada je posvećena plesno-pedagoškom radu i koreografiranju.",
+      text: "Odrasla je u Splitu gdje je, od osnutka Dance Box-a pa do odlaska u Zagreb na studij, sudjelovala u radu studija kao plesač, a sada je posvećena plesno-pedagoškom radu i koreografiranju.",
     },
     {
       text: "Po završetku Akademije dramske umjetnosti na Odsjeku za suvremeni ples (nastavnički smjer) odlazi u Nizozemsku na stručnu praksu u Kraljevski Konzervatorij gdje je kasnije pozvana i kao službena zamjena.",
@@ -34,7 +34,7 @@ export default function Home() {
       text: "Ines Mamić",
     },
     {
-      text: "Barbara je odrasla u Splitu gdje je, od osnutka Dance Box-a pa do odlaska u Zagreb na studij, sudjelovala u radu studija kao plesač, a sada je posvećena plesno-pedagoškom radu i koreografiranju.",
+      text: "Još kao dijete angažirana je u ansamblu splitskog baleta, te je uz redovno baletno školovanje stjecala iskustvo radeći s profesionalnim plesačima i vrhunskim koreografima i pedagozima.",
     },
     {
       text: "Nakon 18 godina aktivnog rada u Hrvatskom narodnom kazalištu u Splitu odlučuje se posvetiti radu s djecom i mladima.",

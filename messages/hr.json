@@ -1,4 +1,10 @@
 {
+  "home": {
+    "metadata": {
+      "title": "Plesni studio DanceBox",
+      "description": "Dancebox"
+    }
+  },
   "navbar": {
     "about": "O nama",
     "events": "Događanja",
