@@ -9,12 +9,11 @@ import { ImageGrid } from "@/components/gallery";
 import { Footer } from "@/components/footer";
 import { Map } from "@/components/maps";
 import Navbar from "@/components/navbar";
-import { text } from "stream/consumers";
 
 export default function Home() {
   const text1 = [
     {
-      text: "Barbara Mamic",
+      text: "Barbara Mamić",
     },
     {
       text: "Barbara je odrasla u Splitu gdje je, od osnutka Dance Box-a pa do odlaska u Zagreb na studij, sudjelovala u radu studija kao plesač, a sada je posvećena plesno-pedagoškom radu i koreografiranju.",
@@ -32,7 +31,7 @@ export default function Home() {
 
   const text2 = [
     {
-      text: "Ines Mamic",
+      text: "Ines Mamić",
     },
     {
       text: "Barbara je odrasla u Splitu gdje je, od osnutka Dance Box-a pa do odlaska u Zagreb na studij, sudjelovala u radu studija kao plesač, a sada je posvećena plesno-pedagoškom radu i koreografiranju.",

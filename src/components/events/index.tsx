@@ -8,7 +8,7 @@ export const Events = () => {
   const images = [
     {
       url: "assets/documents/raspored 24.png",
-      alt: "Two cups of coffee being made from a coffee machine.",
+      alt: "event",
       title: t("title1"),
       text: t("text1"),
 
@@ -16,7 +16,7 @@ export const Events = () => {
     },
     {
       url: "assets/images/events/1.jpg",
-      alt: "Food with decorated plate",
+      alt: "event",
       title: t("title2"),
       text: t("text2"),
 
@@ -24,7 +24,7 @@ export const Events = () => {
     },
     {
       url: "assets/images/events/2.jpg",
-      alt: "Coffe served on a table",
+      alt: "event",
       title: t("title3"),
       text: t("text3"),
 
@@ -32,7 +32,7 @@ export const Events = () => {
     },
     {
       url: "assets/images/events/3.jpg",
-      alt: "Breakfast",
+      alt: "event",
       title: t("title4"),
       text: t("text4"),
 

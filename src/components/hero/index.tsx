@@ -9,20 +9,20 @@ export const Hero = () => {
   const t = useTranslations("hero");
   const images = [
     {
-      url: "assets/images/002.jpg",
-      alt: "Two cups of coffee being made from a coffee machine.",
+      url: "assets/images/007.webp",
+      alt: "Dancers on a stage",
     },
     {
-      url: "assets/images/003.jpg",
-      alt: "Food with decorated plate",
+      url: "assets/images/006.webp",
+      alt: "DanceBox dancer on a stage",
     },
     {
-      url: "assets/images/004.jpg",
-      alt: "Coffee served on a table",
+      url: "assets/images/005.webp",
+      alt: "Barbara on a stage",
     },
     {
-      url: "assets/images/005.jpg",
-      alt: "Breakfast",
+      url: "assets/images/019.webp",
+      alt: "Dancers on a stage",
     },
   ];
 

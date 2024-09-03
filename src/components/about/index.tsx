@@ -36,8 +36,8 @@ export const About = () => {
         <div className={styles.contentWrapper}>
           <div className={styles.imageWrapper}>
             <img
-              src="assets/images/dvorana.jpg"
-              alt="About Us"
+              src="assets/images/dvorana.webp"
+              alt="DanceBox hall"
               id="aboutImage"
             />
           </div>

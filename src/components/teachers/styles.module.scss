@@ -34,6 +34,13 @@
 .textSection {
   flex: 1;
   max-width: 50%;
+
+  opacity: 0;
+  transition: opacity 2s ease;
+
+  &.loaded {
+    opacity: 1;
+  }
 }
 
 .imageSection {
@@ -42,6 +49,17 @@
   overflow: hidden;
   flex: 1;
   height: 600px;
+
+  opacity: 0;
+  transform: translateY(400px);
+  transition:
+    opacity 2s ease,
+    transform 2s ease;
+
+  &.loaded {
+    transform: translateY(0);
+    opacity: 1;
+  }
 
   img {
     width: 50%;

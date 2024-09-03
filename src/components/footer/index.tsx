@@ -41,7 +41,10 @@ export const Footer = () => {
             <div>{t("privacy")}</div>
           </div>
           <div className={styles.schedule} onClick={handleClickRasp}>
-            <img src="assets/calendar-days-svgrepo-com.svg" />
+            <img
+              src="assets/calendar-days-svgrepo-com.svg"
+              style={{ padding: "4px" }}
+            />
 
             <div>{t("raspored")}</div>
           </div>
