@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import styles from "./styles.module.scss";
 import { Link } from "@/navigation";
+import Image from "next/image";
 
 export const Footer = () => {
   const t = useTranslations("footer");
@@ -37,11 +38,19 @@ export const Footer = () => {
         </Link>
         <div className={styles.data}>
           <div className={styles.doc} onClick={handleClickPdf}>
-            <img src="assets/document-svgrepo-com.svg" />{" "}
+            <Image
+              width={30}
+              height={30}
+              src="assets/document-svgrepo-com.svg"
+              alt="doc icon"
+            />{" "}
             <div>{t("privacy")}</div>
           </div>
           <div className={styles.schedule} onClick={handleClickRasp}>
-            <img
+            <Image
+              width={30}
+              height={30}
+              alt="icon"
               src="assets/calendar-days-svgrepo-com.svg"
               style={{ padding: "4px" }}
             />
@@ -56,7 +65,9 @@ export const Footer = () => {
             target="_blank"
             rel="noopener noreferrer">
             <div className={styles.inst}>
-              <img
+              <Image
+                width={30}
+                height={30}
                 src="assets/instagram-svgrepo-com.svg"
                 alt="instagram logo"
               />
@@ -69,7 +80,12 @@ export const Footer = () => {
             rel="noopener noreferrer">
             {" "}
             <div className={styles.facebook}>
-              <img src="assets/facebook-svgrepo-com.svg" alt="instagram logo" />{" "}
+              <Image
+                width={30}
+                height={30}
+                src="assets/facebook-svgrepo-com.svg"
+                alt="facebook logo"
+              />{" "}
             </div>
           </Link>
 
@@ -79,9 +95,11 @@ export const Footer = () => {
             rel="noopener noreferrer">
             {" "}
             <div className={styles.youtube}>
-              <img
+              <Image
+                width={30}
+                height={30}
                 src="assets/youtube-168-svgrepo-com.svg"
-                alt="instagram logo"
+                alt="yt logo"
               />{" "}
             </div>
           </Link>
