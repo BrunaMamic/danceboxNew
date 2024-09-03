@@ -3,6 +3,7 @@ import { Karla } from "next/font/google";
 import "../globals.scss";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { Analytics } from "@vercel/analytics/react";
 
 const karlaFont = Karla({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ const RootLayout = async ({
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
