@@ -9,7 +9,6 @@
 html {
   scroll-behavior: smooth;
   background-color: #ffff;
-  color-scheme: light;
 }
 
 body {
@@ -20,11 +19,6 @@ body {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #ffff;
-    color: black;
-  }
-  :root {
-    color-scheme: light;
-    background-color: white;
     color: black;
   }
 }
