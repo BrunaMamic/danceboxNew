@@ -48,12 +48,12 @@ const Navbar = () => {
       id="navbar">
       <div className={styles.wrapper}>
         <Link href={"/"}>
-          <div className={styles.logo}>
+          <div className={styles.logo} style={{ margin: "20px 0 0 0" }}>
             <Image
-              src={"/db_logo.png"}
+              src={"/newLogo.png"}
               alt={"Logo"}
               width={100}
-              height={80}></Image>
+              height={100}></Image>
           </div>
         </Link>
         {pageWidth >= 1100 ? (

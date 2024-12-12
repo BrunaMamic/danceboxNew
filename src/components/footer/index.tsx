@@ -21,7 +21,7 @@ export const Footer = () => {
   return (
     <div className={styles.mainWrapper}>
       <div className={styles.logo}>
-        <img src="/db_logo.png" alt="logo" />
+        <img src="/newLogo.png" alt="logo" />
       </div>
 
       <div className={styles.content}>

@@ -20,34 +20,51 @@
 .titleSection {
   display: flex;
   flex-direction: column;
-
-  color: #35291e;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  gap: 40px;
 
-  animation: fadeInScale 1.5s ease-out forwards;
-  opacity: 0;
-  transform: scale(0.3);
-
-  h2 {
-    font-size: 50px;
-    line-height: 90px;
-    font-weight: 300;
+  .title {
+    width: 100%;
+    font-size: 170px;
+    font-weight: 500;
+    line-height: 1;
+    color: #35291e;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
   }
 
-  h1 {
-    font-style: italic;
+  .letter {
+    opacity: 0;
+    // transform: scale(0) translateX(50px);
+    display: inline-block;
+    animation: appear 1s ease-in forwards;
+  }
 
-    font-size: 140px;
-    line-height: 90px;
-    font-weight: 500;
+  .animated {
+    animation: appear 1s ease forwards;
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: scale(0.6) translateX(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.2) translateX(0);
+    }
   }
 
   @media screen and (max-width: 1100px) {
     flex-direction: column;
     gap: 0;
+
+    .title {
+      gap: 14px;
+    }
 
     h2 {
       text-align: center;
@@ -56,7 +73,7 @@
       line-height: 20px;
     }
     h1 {
-      font-size: 60px !important;
+      font-size: 45px !important;
     }
   }
 }

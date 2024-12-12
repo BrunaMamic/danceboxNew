@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Karla } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "../globals.scss";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Analytics } from "@vercel/analytics/react";
 
-const karlaFont = Karla({ subsets: ["latin"] });
+const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Plesni studio DanceBox",
@@ -25,7 +25,7 @@ const RootLayout = async ({
       <head>
         <meta name="color-scheme" content="light" />
       </head>
-      <body className={karlaFont.className}>
+      <body className={raleway.className}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

@@ -31,9 +31,12 @@ export const Hero = () => {
   );
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInViewport(ref, "-100px");
+  const [animate, setAnimate] = useState(false);
+  const title = t("title2");
 
   useEffect(() => {
     if (inView) {
+      setAnimate(true);
       let index = imagesLoaded.findIndex((loaded) => !loaded);
       if (index !== -1) {
         setTimeout(() => {
@@ -48,14 +51,19 @@ export const Hero = () => {
   return (
     <div className={styles.mainWrapper}>
       <div className={styles.wrapper}>
-        <div className={styles.titleSection}>
-          <h1
-            style={{
-              fontSize: "170px",
-            }}>
-            {t("title2")}
+        <div className={styles.titleSection} ref={ref}>
+          <h1 className={styles.title}>
+            {title.split("").map((letter, index) => (
+              <span
+                key={index}
+                className={`${styles.letter} ${animate ? styles.animated : ""}`}
+                style={{
+                  animationDelay: `${index * 0.1}s`,
+                }}>
+                {letter === " " ? "\u00A0" : letter} {/* Handle spaces */}
+              </span>
+            ))}
           </h1>
-          <h2>{t("title1")}</h2>
         </div>
         <div className={styles.imagesSection} ref={ref}>
           {images.map((image, index) => (

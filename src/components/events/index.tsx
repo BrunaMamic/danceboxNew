@@ -7,6 +7,14 @@ export const Events = () => {
   const t = useTranslations("events");
   const images = [
     {
+      url: "assets/images/events/najavaV1.jpg",
+      alt: "event",
+      title: t("title5"),
+      text: t("text5"),
+
+      href: "https://www.instagram.com/p/DDZY9a2sKlp/",
+    },
+    {
       url: "assets/documents/raspored 24.png",
       alt: "event",
       title: t("title1"),
@@ -30,14 +38,14 @@ export const Events = () => {
 
       href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid021VvKfMzJuMjbHD2hs685QADJp33Lb94ZecVuve332bEirEo5Ky5o8qF99MS1t6ehl",
     },
-    {
-      url: "assets/images/events/3.jpg",
-      alt: "event",
-      title: t("title4"),
-      text: t("text4"),
+    // {
+    //   url: "assets/images/events/3.jpg",
+    //   alt: "event",
+    //   title: t("title4"),
+    //   text: t("text4"),
 
-      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid0qq8JPu4hZgnzd8cFNMTMZXdyNJjvWXDr1dPoSKviEKYqbEYKUgVKq5XiP38cmaf8l",
-    },
+    //   href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid0qq8JPu4hZgnzd8cFNMTMZXdyNJjvWXDr1dPoSKviEKYqbEYKUgVKq5XiP38cmaf8l",
+    // },
   ];
 
   return (
