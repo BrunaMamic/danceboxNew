@@ -7,45 +7,45 @@ export const Events = () => {
   const t = useTranslations("events");
   const images = [
     {
-      url: "assets/images/events/najavaV1.jpg",
+      url: "assets/images/events/maliSplit.jpeg",
       alt: "event",
-      title: t("title5"),
-      text: t("text5"),
+      title: t("maliSplit.title"),
+      text: t("maliSplit.text"),
 
-      href: "https://www.instagram.com/p/DDZY9a2sKlp/",
+      href: "https://www.facebook.com/reel/726455550249652",
     },
     {
-      url: "assets/documents/raspored 24.png",
+      url: "assets/images/events/znjanPripreme.jpeg",
       alt: "event",
-      title: t("title1"),
-      text: t("text1"),
+      title: t("znjanPripreme.title"),
+      text: t("znjanPripreme.text"),
 
-      href: "https://docs.google.com/forms/d/e/1FAIpQLScav_ZuSo6uwwaC5spJcMVtacdTWMMV-YpVkixRjoazmCxk8g/viewform?vc=0&c=0&w=1&flr=0&pli=1",
+      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid0Wus9XJ26umo29biAA8G8W7XRpjL4VM19RHsbyq8k8ni8tFfy41a7NNBbdbCKcM77l",
     },
     {
-      url: "assets/images/events/1.jpg",
+      url: "assets/images/events/vg.jpeg",
       alt: "event",
-      title: t("title2"),
-      text: t("text2"),
+      title: t("vg.title"),
+      text: t("vg.text"),
 
-      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid0pgHkgdXXZhZN65aYwHchpt9Bda9Xd6h9e53FxnqT6LLwDZZdzniRKRDmVFNTsjrTl",
+      href: "https://www.facebook.com/reel/668175555856836",
     },
     {
-      url: "assets/images/events/2.jpg",
+      url: "assets/images/events/sarajevo.jpeg",
       alt: "event",
-      title: t("title3"),
-      text: t("text3"),
+      title: t("sarajevo.title"),
+      text: t("sarajevo.text"),
 
-      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid021VvKfMzJuMjbHD2hs685QADJp33Lb94ZecVuve332bEirEo5Ky5o8qF99MS1t6ehl",
+      href: "https://www.facebook.com/PlesniStudioDanceBox/videos/1175901870137962/",
     },
-    // {
-    //   url: "assets/images/events/3.jpg",
-    //   alt: "event",
-    //   title: t("title4"),
-    //   text: t("text4"),
+    {
+      url: "assets/images/events/brezice.jpg",
+      alt: "event",
+      title: t("brezice.title"),
+      text: t("brezice.text"),
 
-    //   href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid0qq8JPu4hZgnzd8cFNMTMZXdyNJjvWXDr1dPoSKviEKYqbEYKUgVKq5XiP38cmaf8l",
-    // },
+      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid034ozY9U5tz7JEHbcjBXRMU7c1DKSDX2Cwu2A6z4ZeG472groFJN2PcWCUAXpRi7znl",
+    },
   ];
 
   return (
