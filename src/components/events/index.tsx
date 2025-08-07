@@ -15,6 +15,13 @@ export const Events = () => {
       href: "https://www.facebook.com/reel/726455550249652",
     },
     {
+      url: "assets/images/events/znjan.jpg",
+      alt: "event",
+      title: t("znjan.title"),
+      text: t("znjan.text"),
+      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid0LqhfCvrvabKQigZXBfmv5gBHSrnQKTU5BuTreoZzw9srAAkU4yrE7MRTw49Cze2al",
+    },
+    {
       url: "assets/images/events/znjanPripreme.jpeg",
       alt: "event",
       title: t("znjanPripreme.title"),
