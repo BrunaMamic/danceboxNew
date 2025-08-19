@@ -45,7 +45,8 @@ const Navbar = () => {
       className={`${styles.navbar}   ${
         isOpen === 1 ? styles.open : isOpen === -1 ? styles.closed : ""
       }`}
-      id="navbar">
+      id="navbar"
+    >
       <div className={styles.wrapper}>
         <Link href={"/"}>
           <div className={styles.logo} style={{ margin: "20px 0 0 0" }}>
@@ -53,12 +54,16 @@ const Navbar = () => {
               src={"/newLogo.png"}
               alt={"Logo"}
               width={100}
-              height={100}></Image>
+              height={100}
+            ></Image>
           </div>
         </Link>
         {pageWidth >= 1100 ? (
           <>
             <ul className={styles.navLinks}>
+              <li style={{ fontWeight: "600" }}>
+                <Link href="/upisi">{"UPISI"}</Link>
+              </li>
               <li>
                 <Link href="#about">{t("about")}</Link>
               </li>
@@ -100,10 +105,12 @@ const Navbar = () => {
               className={
                 isOpen === 1 ? styles.hamburgerOpen : styles.hamburgerIcon
               }
-              onClick={() => setIsOpen(isOpen === 1 ? -1 : 1)}>
+              onClick={() => setIsOpen(isOpen === 1 ? -1 : 1)}
+            >
               <div
                 className={styles.hamburgerLine}
-                style={{ color: "#000" }}></div>
+                style={{ color: "#000" }}
+              ></div>
               <div className={styles.hamburgerLine}></div>
               <div className={styles.hamburgerLine}></div>
             </div>
@@ -115,15 +122,31 @@ const Navbar = () => {
         <div
           className={`${styles.menu} ${
             isOpen ? styles.menuOpen : styles.menuClose
-          }`}>
+          }`}
+        >
           <div className={styles.openMenuContainer}>
             <div className={styles.info}>
               <div
                 className={styles.mobileNavLinks}
-                style={{ transition: "0.8s ease 9s" }}>
+                style={{ transition: "0.8s ease 9s" }}
+              >
                 <div
                   className={`${styles.link}  ${handleFadeInAnim()}`}
-                  style={{ transition: "0.5s ease 6s" }}>
+                  style={{ transition: "0.5s ease 6s" }}
+                >
+                  <Link href="/upisi" onClick={() => setIsOpen(-1)}>
+                    <div
+                      className={`${styles.linkOuterWrapper} `}
+                      style={{ fontWeight: "600" }}
+                    >
+                      {"UPISI"}
+                    </div>
+                  </Link>
+                </div>
+                <div
+                  className={`${styles.link}  ${handleFadeInAnim()}`}
+                  style={{ transition: "0.5s ease 6s" }}
+                >
                   <Link href="#about" onClick={() => setIsOpen(-1)}>
                     <div className={`${styles.linkOuterWrapper} `}>
                       {t("about")}
@@ -132,7 +155,8 @@ const Navbar = () => {
                 </div>
                 <div
                   className={`${styles.link}  ${handleFadeInAnim()}`}
-                  style={{ transition: "0.8s ease 9s" }}>
+                  style={{ transition: "0.8s ease 9s" }}
+                >
                   <Link href="#events" onClick={() => setIsOpen(-1)}>
                     <div className={`${styles.linkOuterWrapper}  `}>
                       {t("events")}

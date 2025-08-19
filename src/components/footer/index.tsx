@@ -13,11 +13,26 @@ export const Footer = () => {
     window.open(pdfUrl, "_blank");
   };
 
-  const handleClickRasp = () => {
-    const pdfUrl = "assets/documents/raspored 24.png ";
+  const handleClickPrivole = () => {
+    const pdfUrl = "assets/documents/privole-clanova.pdf ";
 
     window.open(pdfUrl, "_blank");
   };
+
+  const handleClickMaloljetni = () => {
+    const pdfUrl =
+      "assets/documents/registracijski-lisitc-maloljetne-osobe.pdf ";
+
+    window.open(pdfUrl, "_blank");
+  };
+
+  const handleClickPunoljetni = () => {
+    const pdfUrl =
+      "assets/documents/registracijski-listic-punoljetne-osobe.pdf ";
+
+    window.open(pdfUrl, "_blank");
+  };
+
   return (
     <div className={styles.mainWrapper}>
       <div className={styles.logo}>
@@ -29,7 +44,8 @@ export const Footer = () => {
         <Link
           href={"mailto:danceboxsplit1@gmail.com"}
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           <div className={styles.email}>{t("email")} </div>
         </Link>
 
@@ -46,16 +62,32 @@ export const Footer = () => {
             />{" "}
             <div>{t("privacy")}</div>
           </div>
-          <div className={styles.schedule} onClick={handleClickRasp}>
+          <div className={styles.doc} onClick={handleClickPrivole}>
             <Image
               width={30}
               height={30}
-              alt="icon"
-              src="assets/calendar-days-svgrepo-com.svg"
-              style={{ padding: "4px" }}
-            />
-
-            <div>{t("raspored")}</div>
+              src="assets/document-svgrepo-com.svg"
+              alt="doc icon"
+            />{" "}
+            <div>{"Privole punoljetnih i maloljetnih članova"}</div>
+          </div>
+          <div className={styles.doc} onClick={handleClickMaloljetni}>
+            <Image
+              width={30}
+              height={30}
+              src="assets/document-svgrepo-com.svg"
+              alt="doc icon"
+            />{" "}
+            <div>{"Registracijski listić za maloljetne članove"}</div>
+          </div>
+          <div className={styles.doc} onClick={handleClickPunoljetni}>
+            <Image
+              width={30}
+              height={30}
+              src="assets/document-svgrepo-com.svg"
+              alt="doc icon"
+            />{" "}
+            <div>{"Registracijski listić za punoljetne članove"}</div>
           </div>
         </div>
 
@@ -63,7 +95,8 @@ export const Footer = () => {
           <Link
             href={"https://www.instagram.com/danceboxsplit/"}
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             <div className={styles.inst}>
               <Image
                 width={30}
@@ -77,7 +110,8 @@ export const Footer = () => {
           <Link
             href={"https://www.facebook.com/PlesniStudioDanceBox"}
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             {" "}
             <div className={styles.facebook}>
               <Image
@@ -92,7 +126,8 @@ export const Footer = () => {
           <Link
             href={"https://www.youtube.com/@25imami/videos"}
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             {" "}
             <div className={styles.youtube}>
               <Image
