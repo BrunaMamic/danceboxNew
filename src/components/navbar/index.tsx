@@ -65,22 +65,22 @@ const Navbar = () => {
                 <Link href="/upisi">{"UPISI"}</Link>
               </li>
               <li>
-                <Link href="#about">{t("about")}</Link>
+                <Link href="/#about">{t("about")}</Link>
               </li>
               <li>
-                <Link href="#events">{t("events")}</Link>
+                <Link href="/#events">{t("events")}</Link>
               </li>
               <li>
-                <Link href="#program">{t("program")}</Link>
+                <Link href="/#program">{t("program")}</Link>
               </li>
               <li>
-                <Link href="#teachers">{t("teachers")}</Link>
+                <Link href="/#teachers">{t("teachers")}</Link>
               </li>
               <li>
-                <Link href="#gallery">{t("gallery")}</Link>
+                <Link href="/#gallery">{t("gallery")}</Link>
               </li>
               <li>
-                <Link href="#location">{t("location")}</Link>
+                <Link href="/#location">{t("location")}</Link>
               </li>
               {/* <div className={styles.languageWrapper}>
                 <Link
@@ -147,7 +147,7 @@ const Navbar = () => {
                   className={`${styles.link}  ${handleFadeInAnim()}`}
                   style={{ transition: "0.5s ease 6s" }}
                 >
-                  <Link href="#about" onClick={() => setIsOpen(-1)}>
+                  <Link href="/#about" onClick={() => setIsOpen(-1)}>
                     <div className={`${styles.linkOuterWrapper} `}>
                       {t("about")}
                     </div>
@@ -157,35 +157,35 @@ const Navbar = () => {
                   className={`${styles.link}  ${handleFadeInAnim()}`}
                   style={{ transition: "0.8s ease 9s" }}
                 >
-                  <Link href="#events" onClick={() => setIsOpen(-1)}>
+                  <Link href="/#events" onClick={() => setIsOpen(-1)}>
                     <div className={`${styles.linkOuterWrapper}  `}>
                       {t("events")}
                     </div>
                   </Link>
                 </div>
                 <div className={`${styles.link}  ${handleFadeInAnim()}`}>
-                  <Link href="#program" onClick={() => setIsOpen(-1)}>
+                  <Link href="/#program" onClick={() => setIsOpen(-1)}>
                     <div className={`${styles.linkOuterWrapper} `}>
                       {t("program")}
                     </div>
                   </Link>
                 </div>
                 <div className={`${styles.link}  ${handleFadeInAnim()}`}>
-                  <Link href="#teachers" onClick={() => setIsOpen(-1)}>
+                  <Link href="/#teachers" onClick={() => setIsOpen(-1)}>
                     <div className={`${styles.linkOuterWrapper}  `}>
                       {t("teachers")}
                     </div>
                   </Link>
                 </div>
                 <div className={`${styles.link}  ${handleFadeInAnim()}`}>
-                  <Link href="#gallery" onClick={() => setIsOpen(-1)}>
+                  <Link href="/#gallery" onClick={() => setIsOpen(-1)}>
                     <div className={`${styles.linkOuterWrapper}  `}>
                       {t("gallery")}
                     </div>
                   </Link>
                 </div>
                 <div className={`${styles.link}  ${handleFadeInAnim()}`}>
-                  <Link href="location" onClick={() => setIsOpen(-1)}>
+                  <Link href="/#location" onClick={() => setIsOpen(-1)}>
                     <div className={`${styles.linkOuterWrapper}  `}>
                       {t("location")}
                     </div>
