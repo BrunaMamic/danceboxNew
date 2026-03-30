@@ -36,7 +36,7 @@ export const Events = () => {
       href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid02Bi48dnu26PC7PXFu3EWkbudpK3yKvKtiQLxcN5zbVfxhpGMuQ8NpvLXx9syCt7t8l",
     },
     {
-      url: "assets/images/events/flashmob.jpeg",
+      url: "assets/images/events/flashMob.jpeg",
       alt: "event",
       title: 'Flashmob u Splitu',
       text: 'Preko 500 sudionika na do sada najvećem flashmobu u Splitu u svrhu najave utrke Race for the cure koja će se održati za tjedan dana. 05.10.2025 sa startom u 11 sati na splitskoj Rivi. Na čast nam je što smo bili dio velike splitske priče i pomogli na ovakav način u borbi protiv raka.',
