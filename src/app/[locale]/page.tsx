@@ -1,5 +1,4 @@
 import { getTranslations } from "next-intl/server";
-import { Locale } from "@formatjs/ecma402-abstract/types/core";
 import Hero from "@/components/hero";
 import { About } from "@/components/about";
 import { Events } from "@/components/events";
@@ -75,10 +74,11 @@ export default function Home() {
 }
 
 export async function generateMetadata({
-  params: { locale },
+  params,
 }: {
-  params: { locale: Locale };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "home" });
 
   return {

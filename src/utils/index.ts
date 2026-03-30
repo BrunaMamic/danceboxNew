@@ -1,7 +1,7 @@
 import { RefObject, useEffect, useState } from "react";
 
 export const useInViewport = (
-  ref: RefObject<HTMLDivElement | HTMLImageElement>,
+  ref: RefObject<HTMLDivElement | HTMLImageElement | null>,
   rootMargin: string
 ) => {
   const [isIntersecting, setIntersecting] = useState(false);

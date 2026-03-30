@@ -7,52 +7,42 @@ export const Events = () => {
   const t = useTranslations("events");
   const images = [
     {
-      url: "assets/images/events/maliSplit.jpeg",
+      url: "assets/images/events/diplomski.jpeg",
       alt: "event",
-      title: t("maliSplit.title"),
-      text: t("maliSplit.text"),
+      title: 'Ines Mamić',
+      text: 'Naša umjetnička voditeljica i glavna koreografkinja Ines Mamić 26.02.2026. na @institut_za_umetnicku_igru u Beogradu obranila je svoj diplomski rad na temu "Utjecaj digitalizacije i društvenih mreža na plesnu umjetnost" te službeno stekla titulu Dramskog i audio vizualnog plesnog umjetnika.',
 
-      href: "https://www.facebook.com/reel/726455550249652",
+      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid0tHXuYWLPtVvP1jydXwH2kpHhu9e6YcVxmkNA1F4jT8QADTZP3hLaLW76jNDHSRYzl",
     },
     {
-      url: "assets/images/events/znjan.jpg",
+      url: "assets/images/events/slovenija.jpeg",
       alt: "event",
-      title: t("znjan.title"),
-      text: t("znjan.text"),
-      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid0LqhfCvrvabKQigZXBfmv5gBHSrnQKTU5BuTreoZzw9srAAkU4yrE7MRTw49Cze2al",
+      title: 'Vikend u Sloveniji',
+      text: 'Vikend smo proveli u Sloveniji na natjecanju u besprijekornoj organizaciji @mdflukecopen\n' +
+          'Predstavili smo se s dva tima.\n' +
+          'Dječjom show  formacijom i juniorskom show grupom, te jednim modern solom.\n' +
+          'Pored odličnih rezultata imali smo i kvalitetno timsko druženje pa ćemo sigurno ponoviti ovakva putovanja.\n',
+
+      href: "https://www.facebook.com/reel/877246458433728",
     },
     {
-      url: "assets/images/events/znjanPripreme.jpeg",
+      url: "assets/images/events/zaDjecu.jpeg",
       alt: "event",
-      title: t("znjanPripreme.title"),
-      text: t("znjanPripreme.text"),
+      title: 'DanceBox za djecu',
+      text: 'Hvala na pozivu @splitzadjecu  kao i izvrsnoj organizaciji.\n' +
+          'Bio nam je gušt sudjelovati.\n' +
+          '@gradsplit_st',
 
-      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid0Wus9XJ26umo29biAA8G8W7XRpjL4VM19RHsbyq8k8ni8tFfy41a7NNBbdbCKcM77l",
+      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid02Bi48dnu26PC7PXFu3EWkbudpK3yKvKtiQLxcN5zbVfxhpGMuQ8NpvLXx9syCt7t8l",
     },
     {
-      url: "assets/images/events/vg.jpeg",
+      url: "assets/images/events/flashmob.jpeg",
       alt: "event",
-      title: t("vg.title"),
-      text: t("vg.text"),
+      title: 'Flashmob u Splitu',
+      text: 'Preko 500 sudionika na do sada najvećem flashmobu u Splitu u svrhu najave utrke Race for the cure koja će se održati za tjedan dana. 05.10.2025 sa startom u 11 sati na splitskoj Rivi. Na čast nam je što smo bili dio velike splitske priče i pomogli na ovakav način u borbi protiv raka.',
 
-      href: "https://www.facebook.com/reel/668175555856836",
-    },
-    {
-      url: "assets/images/events/sarajevo.jpeg",
-      alt: "event",
-      title: t("sarajevo.title"),
-      text: t("sarajevo.text"),
-
-      href: "https://www.facebook.com/PlesniStudioDanceBox/videos/1175901870137962/",
-    },
-    {
-      url: "assets/images/events/brezice.jpg",
-      alt: "event",
-      title: t("brezice.title"),
-      text: t("brezice.text"),
-
-      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid034ozY9U5tz7JEHbcjBXRMU7c1DKSDX2Cwu2A6z4ZeG472groFJN2PcWCUAXpRi7znl",
-    },
+      href: "https://www.facebook.com/PlesniStudioDanceBox/posts/pfbid02dQ1QoZ79zwXuL9qoppwf8h6ssdRENNrU1MBHbAYYYjdHAfHSawjw6htQ3JVLQLfVl",
+    }
   ];
 
   return (
