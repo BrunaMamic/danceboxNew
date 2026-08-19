@@ -1,7 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.scss";
-import { useTranslations } from "next-intl";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 export const Dob = () => {
@@ -11,23 +10,32 @@ export const Dob = () => {
     {
       title: "MINI KADETI",
       content:
-        "Uz jačanje primarne muskulature kroz igru i zabavne vježbe veliku pozornost dajemo koordinaciji i stabilnosti . Kada dijete stekne osnovne fizičke predispozicije i spremno je za viši stupanj plesne aktivnost učimo ga osnovnim baletnim i gimnastičkim elementima. Program uključuje i rad na ritmičnosti i muzikalnosti kroz jednostavne koreografije prilagođene njihovoj dobi.",
+        "Uz jačanje primarne muskulature kroz igru i zabavne vježbe veliku pozornost dajemo koordinaciji i stabilnosti. Kada dijete stekne osnovne fizičke predispozicije i spremno je za viši stupanj plesne aktivnost učimo ga osnovnim baletnim i gimnastičkim elementima. Program uključuje i rad na ritmičnosti i muzikalnosti kroz jednostavne koreografije prilagođene njihovoj dobi.",
     },
     {
       title: "KADETI",
       content:
-        "Osvještavanjem funkcionalnosti muskulature djeca ove dobi su već spremna za bazičnu plesnu tehniku kao što su pirueti i osnovni skokovi te kretanje kroz prostor, Koreografije su im glazbeno i ritmički kompleksnije te se od njih očekuje aktivno sudjelovanje u stvaranju rezultata treninga.",
+        "Osvještavanjem funkcionalnosti muskulature djeca ove dobi su već spremna za bazičnu plesnu tehniku kao što su pirueti i osnovni skokovi te kretanje kroz prostor. Koreografije su im glazbeno i ritmički kompleksnije te se od njih očekuje aktivno sudjelovanje u stvaranju rezultata treninga.",
     },
     {
-      title: "JUNIORI/ SENIORI",
+      title: "JUNIORI / SENIORI",
       content:
-        "Ove dobne skupine već imaju usvojenu određenu razinu plesne tehnike te su fizički spremne za zahtjevne plesne programe.",
+        "Ove dobne skupine već imaju usvojenu određenu razinu plesne tehnike, te su fizički spremne za zahtjevne plesne programe.",
     },
     {
       title: "REKREATIVNA GRUPA",
       content:
         "Dobna skupina koja podrazumijeva starije od 30 godina željne treninga uz glazbu. Trening obuhvaća istezanje, snagu i izdržljivost, koordinaciju, plesnu tehniku, te lagane i zabave koreografije.",
     },
+  ];
+
+  const groups = [
+    { title: "MINI KADETI", years: "2022 / 2021 / 2020" },
+    { title: "KADETI 2", years: "2019 / 2018" },
+    { title: "KADETI 1", years: "2017 / 2016" },
+    { title: "JUNIORI 2", years: "2015 / 2014" },
+    { title: "JUNIORI 1", years: "2013 / 2012 / 2011" },
+    { title: "SENIORI", years: "2010 i niže" },
   ];
 
   const handleToggle = (index: number) => {
@@ -70,6 +78,18 @@ export const Dob = () => {
               )}
             </div>
           ))}
+
+          <div className={styles.groups}>
+            <h2>DOBNE SKUPINE PO GODIŠTIMA</h2>
+            <ul>
+              {groups.map((group) => (
+                <li key={group.title}>
+                  <span className={styles.groupTitle}>{group.title}</span>
+                  <span className={styles.groupYears}>{group.years}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
