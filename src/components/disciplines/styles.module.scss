@@ -15,16 +15,19 @@
 
 .title {
   flex: 1;
+  min-width: 0;
   display: flex;
 
   h1 {
     font-size: 70px;
     margin: 0;
+    overflow-wrap: anywhere;
   }
 }
 
 .sections {
   flex: 2;
+  min-width: 0;
   // display: grid;
   // grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;

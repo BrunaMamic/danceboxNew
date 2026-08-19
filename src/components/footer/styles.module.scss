@@ -1,8 +1,13 @@
 .mainWrapper {
   display: flex;
-  gap: 200px;
+  // The 200px logo + 200px gap + 100px padding leaves nothing to shrink between
+  // 701px and ~950px, where the row still applied. Wrapping plus a fluid gap
+  // keeps the wide layout identical and removes the overflow in between.
+  flex-wrap: wrap;
+  gap: clamp(40px, 12vw, 200px);
   margin: 200px 0 0 0;
   padding: 0 50px 50px 50px;
+  max-width: 100%;
 
   a {
     text-decoration: none;
@@ -12,6 +17,7 @@
 .logo {
   width: 200px;
   height: 200px;
+  flex-shrink: 0;
 
   img {
     width: 100%;
@@ -24,12 +30,16 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .data,
 .socials {
   display: flex;
   gap: 20px;
+  min-width: 0;
+  flex-wrap: wrap;
 }
 
 .data {

@@ -23,9 +23,20 @@
   max-width: 1440px;
   margin-bottom: 0;
   width: 100%;
-  grid-template-columns: repeat(15, 1fr);
+  overflow: hidden;
+  grid-template-columns: repeat(15, minmax(0, 1fr));
   grid-template-rows: repeat(11, 110px);
   gap: 26px;
+
+  // Every cell is a grid item holding a 700px-wide next/image. Without an
+  // explicit minimum of 0 the auto track floor becomes that intrinsic width
+  // and the grid grows several thousand pixels wide.
+  > * {
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+  }
+
   img {
     width: 100%;
     height: 100%;
@@ -193,10 +204,9 @@
     font-size: 40px;
   }
   .grid {
-    grid-template-columns: repeat(15, 0.2fr);
+    grid-template-columns: repeat(15, minmax(0, 1fr));
     grid-template-rows: repeat(17, 55px);
     grid-gap: 11px;
-    overflow: hidden;
 
     .image_1 {
       grid-column: 11 / 16;

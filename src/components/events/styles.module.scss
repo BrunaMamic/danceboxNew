@@ -33,7 +33,10 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  // minmax(0, 1fr) instead of 1fr: a bare `1fr` floors the track at the item's
+  // min-content width, which for these full-size <img> children is their
+  // intrinsic width and blows the grid far past the viewport.
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 2rem;
   @media screen and (max-width: 1100px) {
     display: flex;
@@ -49,6 +52,7 @@
   justify-content: flex-start;
   height: 300px;
   width: 100%;
+  min-width: 0;
 
   @media screen and (max-width: 1100px) {
     gap: 20px;
@@ -61,6 +65,7 @@
 
 .image {
   width: 45%;
+  min-width: 0;
   height: 300px;
   object-fit: cover;
   margin-right: 1rem;
@@ -76,6 +81,8 @@
   justify-content: flex-start;
   gap: 20px;
   width: 50%;
+  min-width: 0;
+  overflow-wrap: anywhere;
 
   @media screen and (max-width: 1100px) {
     width: 100%;

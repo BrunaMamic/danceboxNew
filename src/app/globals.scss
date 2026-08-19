@@ -2,18 +2,32 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
-  // overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
   background-color: #fdfafa;
+
+  // Safety net against horizontal scroll. `clip` (not `hidden`) so it does not
+  // turn <html> into a scroll container, which would break scroll-behavior:
+  // smooth, position: sticky and anchor scrolling.
+  overflow-x: clip;
 }
 
 body {
   background-color: #fdfafa;
   user-select: none;
+
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+// Images must never be able to push the layout wider than their container.
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
