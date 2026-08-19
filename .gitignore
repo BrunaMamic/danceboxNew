@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+# this project uses npm; keep package-lock.json as the single lockfile
+yarn.lock
+pnpm-lock.yaml
 /.pnp
 .pnp.js
 .yarn/install-state.gz

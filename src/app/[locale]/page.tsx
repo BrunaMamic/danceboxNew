@@ -21,7 +21,7 @@ export default function Home() {
       text: "Po završetku Akademije dramske umjetnosti na Odsjeku za suvremeni ples (nastavnički smjer) odlazi u Nizozemsku na stručnu praksu u Kraljevski Konzervatorij gdje je kasnije pozvana i kao službena zamjena.",
     },
     {
-      text: "Trenutno radi u Umjetničkoj školi Franje Lučića u Velikoj Gorici kao pedagog suvremenog plesa i ritmike u osnovnoj i srednjoj školi. ",
+      text: "Radila je u Umjetničkoj školi Franje Lučića u Velikoj Gorici kao pedagog suvremenog plesa i ritmike u osnovnoj i srednjoj školi. ",
     },
     {
       text: "Stekla je titulu suca Hrvatskog plesnog saveza 2023. godine.",
@@ -34,6 +34,9 @@ export default function Home() {
     },
     {
       text: "Još kao dijete angažirana je u ansamblu splitskog baleta, te je uz redovno baletno školovanje stjecala iskustvo radeći s profesionalnim plesačima i vrhunskim koreografima i pedagozima.",
+    },
+    {
+      text: "Završila je Osnovni akademski studij na Institutu za umjetničku igru u Beogradu te stekla zvanje Dramskog i audiovizualnog umjetnika.",
     },
     {
       text: "Nakon 18 godina aktivnog rada u Hrvatskom narodnom kazalištu u Splitu odlučuje se posvetiti radu s djecom i mladima.",

@@ -13,26 +13,6 @@ export const Footer = () => {
     window.open(pdfUrl, "_blank");
   };
 
-  const handleClickPrivole = () => {
-    const pdfUrl = "assets/documents/privole-clanova.pdf ";
-
-    window.open(pdfUrl, "_blank");
-  };
-
-  const handleClickMaloljetni = () => {
-    const pdfUrl =
-      "assets/documents/registracijski-lisitc-maloljetne-osobe.pdf ";
-
-    window.open(pdfUrl, "_blank");
-  };
-
-  const handleClickPunoljetni = () => {
-    const pdfUrl =
-      "assets/documents/registracijski-listic-punoljetne-osobe.pdf ";
-
-    window.open(pdfUrl, "_blank");
-  };
-
   return (
     <div className={styles.mainWrapper}>
       <div className={styles.logo}>
@@ -61,33 +41,6 @@ export const Footer = () => {
               alt="doc icon"
             />{" "}
             <div>{t("privacy")}</div>
-          </div>
-          <div className={styles.doc} onClick={handleClickPrivole}>
-            <Image
-              width={30}
-              height={30}
-              src="assets/document-svgrepo-com.svg"
-              alt="doc icon"
-            />{" "}
-            <div>{"Privole punoljetnih i maloljetnih članova"}</div>
-          </div>
-          <div className={styles.doc} onClick={handleClickMaloljetni}>
-            <Image
-              width={30}
-              height={30}
-              src="assets/document-svgrepo-com.svg"
-              alt="doc icon"
-            />{" "}
-            <div>{"Registracijski listić za maloljetne članove"}</div>
-          </div>
-          <div className={styles.doc} onClick={handleClickPunoljetni}>
-            <Image
-              width={30}
-              height={30}
-              src="assets/document-svgrepo-com.svg"
-              alt="doc icon"
-            />{" "}
-            <div>{"Registracijski listić za punoljetne članove"}</div>
           </div>
         </div>
 
@@ -135,6 +88,22 @@ export const Footer = () => {
                 height={30}
                 src="assets/youtube-168-svgrepo-com.svg"
                 alt="yt logo"
+              />{" "}
+            </div>
+          </Link>
+
+          <Link
+            href={"https://www.tiktok.com/@dance.box.split"}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {" "}
+            <div className={styles.tiktok}>
+              <Image
+                width={30}
+                height={30}
+                src="assets/tiktok-svgrepo-com.svg"
+                alt="tiktok logo"
               />{" "}
             </div>
           </Link>
