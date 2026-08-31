@@ -26,7 +26,8 @@ const program = [
 ];
 
 const groups = [
-  { title: "Mini kadeti", years: ["2022", "2021", "2020"] },
+  { title: "Plesni vrtić", years: ["2022", "2023"] },
+  { title: "Mini kadeti", years: ["2021", "2020"] },
   { title: "Kadeti 2", years: ["2019", "2018"] },
   { title: "Kadeti 1", years: ["2017", "2016"] },
   { title: "Juniori 2", years: ["2015", "2014"] },
